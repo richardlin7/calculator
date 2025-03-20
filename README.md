@@ -1,2 +1,3 @@
 # calculator
-A Simple Calculator App
+
+A Simple and Humble Calculator App
