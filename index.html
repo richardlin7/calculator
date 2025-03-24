@@ -1,19 +1,20 @@
 <html>
 	<body>
 		<h2>Calculator</h2>
-		<form id="addition">
-			Add: <input type="number" name="val1" /> +
-			<input type="number" name="val2" /> =
-			<p id="demo"></p>
-		</form>
+		Add: <input type="text" id="val1" value="1" /> +
+		<input type="text" id="val2" value="1" /> =
+
+		<p id="demo"></p>
 
 		<button onclick="myFunction()">RUN</button>
 
 		<script>
 			function myFunction() {
-				var x = document.getElementById("frm1");
+				var val1 = parseInt(document.getElementById("val1").value);
+				var val2 = parseInt(document.getElementById("val2").value);
 
-				document.getElementById("demo").innerHTML = text;
+				result = val1 + val2;
+				document.getElementById("demo").innerHTML = result;
 			}
 		</script>
 	</body>
