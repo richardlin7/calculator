@@ -1,15 +1,23 @@
+<!DOCTYPE html>
 <html>
 	<body>
 		<h2>Calculator</h2>
-		Add: <input type="text" id="val1" value="1" /> +
+
+		<button onclick="document.location='/mobile.html'">Mobile Version</button>
+
+		<div>
+		Add: 
+		<input type="text" id="val1" value="1" /> +
 		<input type="text" id="val2" value="1" /> =
 
-		<p id="demo"></p>
+		<p id="demo">Answer</p>	
+		</div>
+		
 
-		<button onclick="myFunction()">RUN</button>
+		<button onclick="addFunc()">RUN</button>
 
 		<script>
-			function myFunction() {
+			function addFunc() {
 				var val1 = parseInt(document.getElementById("val1").value);
 				var val2 = parseInt(document.getElementById("val2").value);
 
